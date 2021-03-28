@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "angularTutotials"
+  "defaultProject": "angularTutotials",
+  "cli": {
+    "analytics": false
+  }
 }
