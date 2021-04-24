@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { DepartmentDetailsComponent } from './Department/department-details/department-details.component';
+import { DepartmentlistComponent } from './Department/departmentlist/departmentlist.component';
 import { EmployeedetailsComponent } from './Employee/employeedetails/employeedetails.component';
 import { EmployeelistComponent } from './Employee/employeelist/employeelist.component';
 import { PageNotFountComponent } from './Error/page-not-fount/page-not-fount.component';
@@ -8,8 +10,10 @@ import { PageNotFountComponent } from './Error/page-not-fount/page-not-fount.com
 const routes: Routes = [
   {path:"",redirectTo:"/employeelist", pathMatch:"full"},
   
-  {path:"employeelist",component:EmployeelistComponent},
+  {path:"employee",component:EmployeelistComponent},
   {path:"employeedetails",component:EmployeedetailsComponent},
+  {path:"departments",component:DepartmentlistComponent},
+  {path:"departments/:Id",component:DepartmentDetailsComponent},
 
   {path:"**",component:PageNotFountComponent}
 ];
@@ -19,4 +23,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const RoutingComponent=[EmployeelistComponent,EmployeedetailsComponent,PageNotFountComponent]
+export const RoutingComponent=[EmployeelistComponent,EmployeedetailsComponent,PageNotFountComponent,
+  DepartmentlistComponent,DepartmentDetailsComponent]

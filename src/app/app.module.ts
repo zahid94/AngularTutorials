@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EmployeeServiceService } from './Employee/employee-service.service';
+import { DepartmentService } from "./Department/department.service";
 
 
 
@@ -19,7 +20,7 @@ import { EmployeeServiceService } from './Employee/employee-service.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EmployeeServiceService],
+  providers: [EmployeeServiceService,DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

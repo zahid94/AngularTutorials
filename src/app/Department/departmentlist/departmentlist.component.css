@@ -1,0 +1,19 @@
+ul li{
+background-color: gainsboro;
+padding: 2px 4px 2px 4px;
+border: 1px solid goldenrod;
+border-radius: 9px;
+width: 10vw;
+list-style-type: none;
+}
+
+ul li span{
+    background-color: gray;
+    color: white;
+    padding: 2px 4px 2px 4px;
+    margin: 2px 4px 2px 4px;
+}
+ul li:hover{
+    cursor: pointer;
+    color: rgb(109, 105, 105);
+}
