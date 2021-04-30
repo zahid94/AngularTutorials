@@ -23,4 +23,7 @@ export class DepartmentDetailsComponent implements OnInit {
   goNext(){
     this.route.navigate(["/departments",this.Id+1]);
   }
+  goBack(){
+    this.route.navigate(["/departments",{"Id":this.Id}])
+  }
 }
