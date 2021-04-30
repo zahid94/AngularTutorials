@@ -8,12 +8,12 @@ import { EmployeelistComponent } from './Employee/employeelist/employeelist.comp
 import { PageNotFountComponent } from './Error/page-not-fount/page-not-fount.component';
 
 const routes: Routes = [
-  {path:"",redirectTo:"/employeelist", pathMatch:"full"},
+  {path:"",redirectTo:"/employee", pathMatch:"full"},
   
   {path:"employee",component:EmployeelistComponent},
   {path:"employeedetails",component:EmployeedetailsComponent},
-  {path:"departments",component:DepartmentlistComponent},
-  {path:"departments/:Id",component:DepartmentDetailsComponent},
+  {path:"departments-list",component:DepartmentlistComponent},
+  {path:"departments-list/:Id",component:DepartmentDetailsComponent},
 
   {path:"**",component:PageNotFountComponent}
 ];
