@@ -14,3 +14,16 @@ a:hover{
     background-color: wheat;
     color: #888;
   }
+  .top{
+      position: relative;
+  }
+  .siteDetails{
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    border: 1px solid yellow;
+    border-radius: 12px;
+    height: 70vh;
+    width: 40vw;
+    padding: 4px;
+  }

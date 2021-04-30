@@ -9,7 +9,6 @@ import { EmployeeServiceService } from './Employee/employee-service.service';
 import { DepartmentService } from "./Department/department.service";
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

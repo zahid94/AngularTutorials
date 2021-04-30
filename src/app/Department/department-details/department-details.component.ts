@@ -25,4 +25,10 @@ export class DepartmentDetailsComponent implements OnInit {
   goBack(){
     this.route.navigate(["../",{"Id":this.Id}],{relativeTo:this.activeRoute})
   }
+  goContact(){
+    this.route.navigate(["contact"],{relativeTo:this.activeRoute});
+  }
+  goOverview(){
+    this.route.navigate(["overview"],{relativeTo:this.activeRoute});
+  }
 }

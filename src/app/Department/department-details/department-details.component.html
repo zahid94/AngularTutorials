@@ -1,5 +1,21 @@
 
 <h3>Your selected Id is = {{Id}}</h3>
-<a (click)="goPrevious()" routerLinkActive="active" >goPrevious</a>
-<a (click)="goNext()" routerLinkActive="active">goNext</a>
-<a (click)="goBack()" routerLinkActive="active">goBack</a>
+
+<div class="top"> 
+    <p>
+        <a (click)="goContact()">Contact</a>
+        <a (click)="goOverview()">Overview</a>
+    </p>
+    <div class="siteDetails">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<P>
+    <a (click)="goPrevious()" routerLinkActive="active" >goPrevious</a>
+    <a (click)="goNext()" routerLinkActive="active">goNext</a>
+</P>
+<p>
+    <a (click)="goBack()" routerLinkActive="active">goBack</a>
+</p>
+
